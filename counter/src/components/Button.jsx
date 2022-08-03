@@ -4,7 +4,7 @@ import '../stylesheets/Button.css';
 export function Button ({ text, clickButton, handleClick }) {
     return(
         <button className={clickButton ? 'button-click' : 'button-reset'}
-        onClick={handleClick}>
+        onClick={handleClick} data-testid='button'>
         {text}
         </button>
     )
